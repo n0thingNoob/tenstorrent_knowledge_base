@@ -18,9 +18,10 @@ Automatically back up this Obsidian research vault to GitHub every week after so
 
 ## Relationship to weekly collection
 
-- Source collection is handled by `scripts/weekly_source_collect.py`.
-- The Codex weekly automation is responsible for deciding whether newly collected `raw/` material should update `wiki/`.
-- Git backup runs after those wiki edits so the vault snapshot includes both new sources and new distilled notes.
+- Cloud source collection is handled by GitHub Actions through `.github/workflows/weekly-source-collection.yml`.
+- The collector itself is `scripts/weekly_source_collect.py`.
+- This local backup script does not fetch new web sources by itself.
+- It is still useful for manual wiki maintenance sessions before pushing local edits.
 
 ## Manual run
 
