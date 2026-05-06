@@ -1,0 +1,22 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local logs / temp
+*.log
+*.tmp
+*.bak
+
+# Obsidian machine-local state
+.obsidian/workspace.json
+.obsidian/workspaces*.json
+
+# Installed community plugin bundles can be restored from plugin lists
+.obsidian/plugins/
+
+# Keep content and stable vault settings tracked

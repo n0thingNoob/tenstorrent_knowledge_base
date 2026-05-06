@@ -1,0 +1,56 @@
+{
+  "sources": [
+    {
+      "name": "tenstorrent-newsroom",
+      "kind": "html_index",
+      "url": "https://tenstorrent.com/en/newsroom",
+      "source_type": "blog",
+      "evidence_hint": "official-doc",
+      "url_patterns": [
+        "/newsroom/"
+      ],
+      "include_keywords": [
+        "wormhole",
+        "blackhole",
+        "grayskull",
+        "tt-forge",
+        "tt-metal",
+        "tt-mlir",
+        "risc-v",
+        "architecture",
+        "open source",
+        "developer",
+        "software"
+      ],
+      "max_candidates": 10,
+      "max_body_chars": 30000
+    },
+    {
+      "name": "corsix-tenstorrent",
+      "kind": "html_index",
+      "url": "https://www.corsix.org/",
+      "source_type": "blog",
+      "evidence_hint": "blog",
+      "url_patterns": [
+        "tt-wh-part",
+        "et-soc"
+      ],
+      "include_keywords": [
+        "tenstorrent",
+        "wormhole",
+        "tensix",
+        "et-soc"
+      ],
+      "max_candidates": 8,
+      "max_body_chars": 40000
+    },
+    {
+      "name": "arxiv-tenstorrent",
+      "kind": "feed",
+      "url": "https://export.arxiv.org/api/query?search_query=all%3Atenstorrent&start=0&max_results=12&sortBy=submittedDate&sortOrder=descending",
+      "source_type": "paper_metadata",
+      "evidence_hint": "paper",
+      "max_items": 12
+    }
+  ]
+}
