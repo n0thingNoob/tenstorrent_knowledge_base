@@ -15,6 +15,7 @@ __pycache__/
 # Obsidian machine-local state
 .obsidian/workspace.json
 .obsidian/workspaces*.json
+.obsidian/graph.json
 
 # Installed community plugin bundles can be restored from plugin lists
 .obsidian/plugins/
