@@ -1,5 +1,5 @@
 ---
-type: entity
+type: architecture
 status: draft
 created: 2026-05-05
 updated: 2026-05-05

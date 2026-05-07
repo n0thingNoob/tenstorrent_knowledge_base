@@ -34,7 +34,7 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add raw outputs/source_collection_state.json outputs/source-collection-*.md
+          git add raw scripts/source_collection_state.json outputs/source-collection-*.md
 
           if git diff --cached --quiet; then
             echo "No staged source-collection changes."

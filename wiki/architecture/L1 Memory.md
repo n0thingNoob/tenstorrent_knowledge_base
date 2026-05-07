@@ -1,5 +1,5 @@
----
-type: concept
+﻿---
+type: architecture
 status: draft
 created: 2026-05-05
 updated: 2026-05-05
@@ -15,17 +15,17 @@ evidence_level: mixed
 
 ## Capacity
 
-- Per-tile: **1.5 MB advertised**, of which **1464 KiB is L1 SRAM proper**. The remaining ~72 KiB is distributed across other on-tile storage (per [[Source - corsix Part 5 — T Tiles]]):
+- Per-tile: **1.5 MB advertised**, of which **1464 KiB is L1 SRAM proper**. The remaining ~72 KiB is distributed across other on-tile storage (per [[Source - corsix Part 5 鈥?T Tiles]]):
   - 32 KiB in `Dst`
   - ~30 KiB across the 5 core-local RAMs
   - 4 KiB in `SrcA`, 4 KiB in `SrcB`, 1 KiB in `Lreg`, etc.
-- Tile-local address: starts at `0`. L1 is mapped to addresses `0 …` while special MMIO/regs sit above `0xFF000000`.
-- Per-core local RAMs: 2 KiB or 4 KiB at `0xFFB00000…`. The C call stack typically lives here (avoids loading L1).
-- "NC" core has 16 KiB of instruction RAM at `0xFFC00000…`.
+- Tile-local address: starts at `0`. L1 is mapped to addresses `0 鈥 while special MMIO/regs sit above `0xFF000000`.
+- Per-core local RAMs: 2 KiB or 4 KiB at `0xFFB00000鈥. The C call stack typically lives here (avoids loading L1).
+- "NC" core has 16 KiB of instruction RAM at `0xFFC00000鈥.
 
 ## L1 across the chip
 
-- 80 Tensix × 1464 KiB ≈ 114 MiB of distributed SRAM per ASIC (before harvesting).
+- 80 Tensix 脳 1464 KiB 鈮?114 MiB of distributed SRAM per ASIC (before harvesting).
 - E tiles also have 256 KiB SRAM each.
 - **No cache hierarchy on chip.** Data placement is fully explicit.
 
@@ -33,13 +33,13 @@ evidence_level: mixed
 
 - Holds tile-aligned data ([[Tile-Based Execution]]) consumed/produced by Unpacker/Packer.
 - Hosts **[[Circular Buffers]]** that synchronise [[Reader Compute Writer Kernels]].
-- Can be **interleaved** (default — distributes across DRAM controllers when used as DRAM stage) or **sharded** (placed by topology) — see [tensor_layouts tech report] referenced in [[open_questions]].
+- Can be **interleaved** (default 鈥?distributes across DRAM controllers when used as DRAM stage) or **sharded** (placed by topology) 鈥?see [tensor_layouts tech report] referenced in [[questions/README|Questions]].
 
 ## Atomics on L1
 
 L1 supports atomic operations from both:
 
-- Tensix Scalar Unit instructions: `ATSWAP`, `ATCAS`, `ATINCGET`, `ATINCGETPTR` (per [[Source - corsix Part 5 — T Tiles]]).
+- Tensix Scalar Unit instructions: `ATSWAP`, `ATCAS`, `ATINCGET`, `ATINCGETPTR` (per [[Source - corsix Part 5 鈥?T Tiles]]).
 - Remote tiles via NoC atomic transactions on **128-bit granularity** in receiver L1, returning 32-bit result (per [[Source - tt-isa NoC]]).
 
 These primitives back software [[Atomic Counters]] and lock-free producer-consumer queues.
@@ -54,3 +54,4 @@ These primitives back software [[Atomic Counters]] and lock-free producer-consum
 - `raw/2026-05-05__github_doc__tt-isa-wormhole-tensix-tile.md`
 - `raw/2026-05-05__github_doc__tt-isa-wormhole-noc.md`
 - `raw/2026-05-05__github_doc__tt-metal-metalium-guide.md`
+

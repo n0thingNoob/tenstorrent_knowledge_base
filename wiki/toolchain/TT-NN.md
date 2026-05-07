@@ -1,5 +1,5 @@
----
-type: concept
+﻿---
+type: toolchain
 status: draft
 created: 2026-05-05
 updated: 2026-05-05
@@ -19,26 +19,24 @@ Per [[Source - tt-metal README]]: "TT-NN is a Python & C++ Neural Network OP lib
 
 ```
 High-level model / vLLM / framework
-   ↓
-TT-NN ops (Python / C++)
-   ↓
-TT-Metal kernels
-   ↓
-Tensix + NoC
+   鈫?TT-NN ops (Python / C++)
+   鈫?TT-Metal kernels
+   鈫?Tensix + NoC
 ```
 
 ## Coverage in current corpus
 
 The README enumerates featured models (Llama 3.3 70B, Qwen 2.5 7B/72B, Whisper, Mixtral 8x7B) and gives perf metrics on n150 / n300 / QuietBox / Galaxy. Tech reports referenced under TT-NN: Advanced Performance Optimizations for Models, ViT-TTNN, LLMs in TT-NN, CNN bring-up.
 
-> Detail beyond the README is **not yet in `raw/`**. Op semantics, sharding policies, and host-side runtime details are flagged in [[open_questions]].
+> Detail beyond the README is **not yet in `raw/`**. Op semantics, sharding policies, and host-side runtime details are flagged in [[questions/README|Questions]].
 
 ## Related pages
 
 - [[TT-Metal]], [[TT-MLIR]], [[Programming Model]]
-- [[Tile-Based Execution]] (TT-NN ops always operate on 32×32 tiles)
+- [[Tile-Based Execution]] (TT-NN ops always operate on 32脳32 tiles)
 
 ## Sources
 
 - `raw/2026-05-05__github_readme__tt-metal-readme.md`
 - `raw/2026-05-05__github_doc__tt-metal-metalium-guide.md` (mentions TT-NN as a higher layer)
+

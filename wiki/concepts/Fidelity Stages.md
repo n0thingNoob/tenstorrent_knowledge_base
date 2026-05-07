@@ -1,4 +1,4 @@
----
+﻿---
 type: concept
 status: draft
 created: 2026-05-05
@@ -11,7 +11,7 @@ evidence_level: official
 
 ## Summary
 
-Wormhole's [[Matrix Unit]] uses a **7b × 5b multiplier** as its primitive. To handle data formats with more mantissa than 7×5 covers, the multiplier is invoked in stages: **LoFi**, **HiFi2**, **HiFi3**, **HiFi4** ([[Source - corsix Part 7 — MatMul]]). The programmer chooses how many stages to run.
+Wormhole's [[Matrix Unit]] uses a **7b 脳 5b multiplier** as its primitive. To handle data formats with more mantissa than 7脳5 covers, the multiplier is invoked in stages: **LoFi**, **HiFi2**, **HiFi3**, **HiFi4** ([[Source - corsix Part 7 鈥?MatMul]]). The programmer chooses how many stages to run.
 
 ## Stage-by-format coverage
 
@@ -31,11 +31,11 @@ Per [[Wormhole]] page:
 
 | Format | n150s (72 Tensix) | n300s (128 Tensix) |
 |---|---|---|
-| LoFi only (e.g. fp8) | 294.9 TFLOP/s expected (advertised slightly lower — bottleneck is data transfer) | 524.3 TFLOP/s |
+| LoFi only (e.g. fp8) | 294.9 TFLOP/s expected (advertised slightly lower 鈥?bottleneck is data transfer) | 524.3 TFLOP/s |
 | LoFi + HiFi2 (bfp8) | 147.5 | 262.1 |
 | LoFi + HiFi2 + HiFi3 + HiFi4 (fp16) | 73.7 | 131.1 |
 
-Each extra stage doubles compute cost; data-movement cost stays constant — at LoFi, advertised throughput is **88.9%** of the multiplier-only ceiling, suggesting the bottleneck shifts to Unpacker/Packer at low precision.
+Each extra stage doubles compute cost; data-movement cost stays constant 鈥?at LoFi, advertised throughput is **88.9%** of the multiplier-only ceiling, suggesting the bottleneck shifts to Unpacker/Packer at low precision.
 
 ## Programmer surface
 
@@ -47,7 +47,7 @@ An extra rounding step (to `Dst` precision) occurs between each fidelity stage w
 
 ## Research signal
 
-This is a fairly unusual primitive: most accelerators commit to a fixed multiplier width per format. Wormhole's "iterate the small multiplier" approach trades latency for chip-area savings. Performance modelling and possible compiler-driven fidelity selection (not just based on input format but on output-precision needs) is a candidate research direction. Tracked in [[open_questions]].
+This is a fairly unusual primitive: most accelerators commit to a fixed multiplier width per format. Wormhole's "iterate the small multiplier" approach trades latency for chip-area savings. Performance modelling and possible compiler-driven fidelity selection (not just based on input format but on output-precision needs) is a candidate research direction. Tracked in [[questions/README|Questions]].
 
 ## Related pages
 
@@ -57,3 +57,4 @@ This is a fairly unusual primitive: most accelerators commit to a fixed multipli
 
 - `raw/2026-05-05__blog__corsix-tt-wh-part7-matmul.md`
 - `raw/2026-05-05__github_doc__tt-isa-wormhole-tensix-tile.md`
+

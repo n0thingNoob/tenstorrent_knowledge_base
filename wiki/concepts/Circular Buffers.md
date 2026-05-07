@@ -1,4 +1,4 @@
----
+﻿---
 type: concept
 status: draft
 created: 2026-05-05
@@ -28,7 +28,7 @@ Per [[Source - METALIUM_GUIDE]]:
 | `get_tile_size(cb)` | bytes per tile in this CB | both |
 | `get_write_ptr(cb)` / `get_read_ptr(cb)` | L1 addresses | both |
 
-In compute kernels, each call only emits code on the appropriate baby core (Unpack vs Pack vs Math) — selection is automatic.
+In compute kernels, each call only emits code on the appropriate baby core (Unpack vs Pack vs Math) 鈥?selection is automatic.
 
 ## API surface (host-side)
 
@@ -42,13 +42,13 @@ CBHandle cb_in0 = CreateCircularBuffer(
         .set_page_size(cb_in0_index, tile_size_bytes));
 ```
 
-`tiles_per_cb >= 2` is the typical knob — larger gives better overlap between data movement and compute, but with diminishing returns and L1 budget pressure. CB indices `c_0`, `c_1`, `c_16`, etc. are arbitrary — only uniqueness matters.
+`tiles_per_cb >= 2` is the typical knob 鈥?larger gives better overlap between data movement and compute, but with diminishing returns and L1 budget pressure. CB indices `c_0`, `c_1`, `c_16`, etc. are arbitrary 鈥?only uniqueness matters.
 
 ## Why this matters
 
-CBs are the central synchronisation primitive of the [[Programming Model]]: they hide the fact that NoC, Unpacker, Pack, and the Math units all run independently and asynchronously. Backpressure is automatic — `cb_reserve_back` blocks the producer when the buffer is full; `cb_wait_front` blocks the consumer when empty.
+CBs are the central synchronisation primitive of the [[Programming Model]]: they hide the fact that NoC, Unpacker, Pack, and the Math units all run independently and asynchronously. Backpressure is automatic 鈥?`cb_reserve_back` blocks the producer when the buffer is full; `cb_wait_front` blocks the consumer when empty.
 
-Implementation note: the underlying hardware metadata is touched by both producer-side and consumer-side calls; corsix Part 5 documents per-tile semaphores and ThCon's `ATINCGETPTR` FIFO atomic — which is precisely a hardware FIFO control structure. Whether TT-Metal's CB metadata is implemented via these atomics or via the dedicated per-pipe Tensix Sync semaphores is **not yet pinned down in `raw/`** ([[open_questions]]).
+Implementation note: the underlying hardware metadata is touched by both producer-side and consumer-side calls; corsix Part 5 documents per-tile semaphores and ThCon's `ATINCGETPTR` FIFO atomic 鈥?which is precisely a hardware FIFO control structure. Whether TT-Metal's CB metadata is implemented via these atomics or via the dedicated per-pipe Tensix Sync semaphores is **not yet pinned down in `raw/`** ([[questions/README|Questions]]).
 
 ## Cross-kernel vs self-loop
 
@@ -62,3 +62,4 @@ CBs can also be used by a single kernel to communicate with itself across iterat
 
 - `raw/2026-05-05__github_doc__tt-metal-metalium-guide.md`
 - `raw/2026-05-05__blog__corsix-tt-wh-part5-t-tiles.md`
+

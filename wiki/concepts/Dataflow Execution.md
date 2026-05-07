@@ -45,7 +45,7 @@ with [[Circular Buffers]] absorbing latency at each boundary. The "Unpack/Math/P
 
 ## Comparison axes
 
-The user's CLAUDE.md flags useful axes for analysing this further:
+The vault guidance highlights useful axes for analysing this further:
 
 - Static vs dynamic mapping
 - Explicit vs compiler-generated communication
@@ -59,7 +59,7 @@ These are research-direction prompts. **Not pursued in this ingest** (per task s
 
 ## Caveats
 
-> "Be careful: do not claim Wormhole is a CGRA without explaining the abstraction mismatch" (per CLAUDE.md). The substrate has many CGRA-like features, but the RISCV cores are general-purpose and dispatched by software, not statically mapped operators.
+> Research caution: do not claim Wormhole is a CGRA without explaining the abstraction mismatch. The substrate has many CGRA-like features, but the RISCV cores are general-purpose and dispatched by software, not statically mapped operators.
 
 ## Related pages
 

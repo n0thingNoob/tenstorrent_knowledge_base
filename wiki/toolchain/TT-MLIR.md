@@ -1,5 +1,5 @@
----
-type: concept
+﻿---
+type: toolchain
 status: stub
 created: 2026-05-05
 updated: 2026-05-05
@@ -33,7 +33,7 @@ Referenced sibling projects: tt-xla, tt-forge-fe, tt-torch (deprecated), tt-tvm.
 
 ## Open questions
 
-See [[open_questions]] for: TTIR vs TTNN dialect responsibilities, TTKernel lowering, where mapping decisions (placement, sharding, kernel selection) are made, and how compile-time vs runtime cost is split.
+See [[questions/README|Questions]] for: TTIR vs TTNN dialect responsibilities, TTKernel lowering, where mapping decisions (placement, sharding, kernel selection) are made, and how compile-time vs runtime cost is split.
 
 ## Related pages
 
@@ -43,3 +43,4 @@ See [[open_questions]] for: TTIR vs TTNN dialect responsibilities, TTKernel lowe
 
 - `raw/2026-05-05__github_readme__tt-metal-readme.md` (mentions TT-MLIR as related project)
 - README of tenstorrent/tt-mlir captured during Pass 1 (referenced in manifest)
+

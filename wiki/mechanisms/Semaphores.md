@@ -1,5 +1,5 @@
----
-type: concept
+﻿---
+type: mechanism
 status: draft
 created: 2026-05-05
 updated: 2026-05-05
@@ -15,7 +15,7 @@ Wormhole has multiple synchronisation surfaces called "semaphore" at different l
 
 ## 1. Tensix Sync semaphores (per Tensix tile)
 
-Inside each [[Tensix]] coprocessor's "Tensix Sync" unit (per [[Source - corsix Part 5 — T Tiles]]) are **8 semaphores**, each with:
+Inside each [[Tensix]] coprocessor's "Tensix Sync" unit (per [[Source - corsix Part 5 鈥?T Tiles]]) are **8 semaphores**, each with:
 
 - 4-bit **counter** value
 - 4-bit **maximum** value (initialised by `SEMINIT`, used only by `SEMWAIT`)
@@ -39,7 +39,7 @@ Note: writing 0 does post, writing 1 does decrement. Counter-intuitive but docum
 
 ## 2. Tensix Sync mutexes
 
-Same unit also has **8 mutexes**, each in one of {acquired by T0, T1, T2 pipe, released}. Instructions: `ATGETM(idx)`, `ATRELM(idx)`. Different from semaphores — fewer states, single owner.
+Same unit also has **8 mutexes**, each in one of {acquired by T0, T1, T2 pipe, released}. Instructions: `ATGETM(idx)`, `ATRELM(idx)`. Different from semaphores 鈥?fewer states, single owner.
 
 ## 3. STALLWAIT (broader condition)
 
@@ -47,7 +47,7 @@ Same unit also has **8 mutexes**, each in one of {acquired by T0, T1, T2 pipe, r
 
 ## 4. TT-Metal-level "host semaphores"
 
-[[TT-Metal]] also exposes a higher-level semaphore primitive (`CreateSemaphore` style, not yet in `raw/`) used for cross-tile synchronisation in multi-core kernels. These are **L1-resident counters** manipulated via NoC writes/atomics — orthogonal to the on-chip Tensix Sync hardware semaphores. **Detail not yet captured in `raw/`** ([[open_questions]]).
+[[TT-Metal]] also exposes a higher-level semaphore primitive (`CreateSemaphore` style, not yet in `raw/`) used for cross-tile synchronisation in multi-core kernels. These are **L1-resident counters** manipulated via NoC writes/atomics 鈥?orthogonal to the on-chip Tensix Sync hardware semaphores. **Detail not yet captured in `raw/`** ([[questions/README|Questions]]).
 
 ## When you'd use which
 
@@ -65,3 +65,4 @@ Same unit also has **8 mutexes**, each in one of {acquired by T0, T1, T2 pipe, r
 ## Sources
 
 - `raw/2026-05-05__blog__corsix-tt-wh-part5-t-tiles.md`
+

@@ -43,7 +43,7 @@ Scope: ingest the 16 files in `raw/` and build the initial `wiki/` from scratch.
 
 **Source summaries (16):** one per raw file, following the requested template.
 
-**Top-level wiki:** `index.md`, `glossary.md`, `open_questions.md`, `log.md`.
+**Top-level wiki:** `index.md`, `glossary.md`, `log.md`, with open questions now tracked under `wiki/questions/`.
 
 **Total wiki files created: 45.**
 
@@ -84,7 +84,7 @@ A Pass 2 of these 6 files would close the most painful gaps without the bloat of
 
 ## 6. Health flags
 
-- **Partial captures:** `tt-isa Wormhole Overview` (lead section only) and `corsix Part 6` (4 LUT-mode tables abridged). Both flagged in [[open_questions]] and the manifest.
+- **Partial captures:** `tt-isa Wormhole Overview` (lead section only) and `corsix Part 6` (4 LUT-mode tables abridged). Both are now tracked under [[questions/README|Questions]] and the manifest.
 - **Stub pages:** `TT-MLIR` (concept) is intentionally a stub — no deeper raw material yet.
 - **Cross-references:** all wiki links use Obsidian wikilinks; `[[Source - <title>]]` form for source pages. Glossary cross-links to concept pages.
 - **`raw/` integrity:** untouched. No file in `raw/` was edited or moved during this ingest.

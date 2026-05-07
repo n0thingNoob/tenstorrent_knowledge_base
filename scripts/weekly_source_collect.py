@@ -332,7 +332,7 @@ def build_report(records: list[dict], skipped: list[str], run_date: str) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Collect weekly Tenstorrent-related source candidates into raw/.")
     parser.add_argument("--config", default="scripts/source_feeds.json")
-    parser.add_argument("--state", default="outputs/source_collection_state.json")
+    parser.add_argument("--state", default="scripts/source_collection_state.json")
     parser.add_argument("--raw-dir", default="raw")
     parser.add_argument("--outputs-dir", default="outputs")
     parser.add_argument("--since-days", type=int, default=14)

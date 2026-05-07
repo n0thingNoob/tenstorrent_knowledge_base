@@ -1,9 +1,9 @@
 ---
-type: entity
+type: overview
 status: draft
 created: 2026-05-05
 updated: 2026-05-05
-tags: [tenstorrent, wormhole, entity]
+tags: [tenstorrent, wormhole, ecosystem, toolchain]
 evidence_level: official
 ---
 

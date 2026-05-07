@@ -1,5 +1,5 @@
----
-type: concept
+﻿---
+type: toolchain
 status: draft
 created: 2026-05-05
 updated: 2026-05-05
@@ -15,13 +15,12 @@ Tenstorrent's compiler/runtime stack lowers high-level model graphs through seve
 
 ```
 PyTorch / JAX / StableHLO (frontend)
-    ↓ (tt-forge / tt-xla / tt-torch)
+    鈫?(tt-forge / tt-xla / tt-torch)
 TT-MLIR  (custom dialects on top of LLVM MLIR)
-    ↓
-TTNN / TT-Metal kernels  (C++)
-    ↓ compile
+    鈫?TTNN / TT-Metal kernels  (C++)
+    鈫?compile
 Reader / Compute / Writer kernel binaries per baby RV core
-    ↓ runtime dispatch (fast dispatch, command queues)
+    鈫?runtime dispatch (fast dispatch, command queues)
 Tensix coprocessor + NoC + L1
 ```
 
@@ -37,7 +36,7 @@ MLIR-based compiler. Defines custom dialects targeting [[TT-NN]] / [[TT-Metal]].
 
 ### TT-Metal (kernel-side compile)
 
-The user's compute kernel C++ is **compiled three times** — once each for the Unpack / Math / Pack baby RV cores — with hardware-specific code sections selected by the Compute API templates. Reader and writer C++ each produce one binary on RISCV_0 / RISCV_1.
+The user's compute kernel C++ is **compiled three times** 鈥?once each for the Unpack / Math / Pack baby RV cores 鈥?with hardware-specific code sections selected by the Compute API templates. Reader and writer C++ each produce one binary on RISCV_0 / RISCV_1.
 
 The Compute API is the **portability seam**: `sin_tile()` lowers to different Tensix instruction sequences on Grayskull (64-lane SFPU), Wormhole (32-lane SFPU), and Blackhole. ([[Source - METALIUM_GUIDE]].)
 
@@ -47,7 +46,7 @@ Low-level kernels: per-Tensix sequences of Tensix instructions (`MOP_CFG`, `MOP`
 
 ### Runtime / dispatch
 
-- **Fast dispatch** — dedicated RV core (often on an unused E tile) feeds the command queue. ([[Source - METALIUM_GUIDE]].)
+- **Fast dispatch** 鈥?dedicated RV core (often on an unused E tile) feeds the command queue. ([[Source - METALIUM_GUIDE]].)
 - Two command queues per device with event-based cross-queue ordering.
 - Slow dispatch mode for debugging.
 
@@ -56,11 +55,11 @@ Low-level kernels: per-Tensix sequences of Tensix instructions (`MOP_CFG`, `MOP`
 | Responsibility | Where |
 |---|---|
 | Frontend graph capture | TT-Forge / tt-xla / tt-torch |
-| Op fusion, layout decisions | TT-MLIR (dialect passes) — *details not captured in raw/* |
-| Sharding placement | TT-MLIR + TT-NN — *details unclear in raw/* |
+| Op fusion, layout decisions | TT-MLIR (dialect passes) 鈥?*details not captured in raw/* |
+| Sharding placement | TT-MLIR + TT-NN 鈥?*details unclear in raw/* |
 | Kernel selection (which TT-NN op) | TT-MLIR / TT-NN |
 | Per-core kernel code | TT-Metal (compile) |
-| Hardware-generation specialisation | Compute API → LLK (compile) |
+| Hardware-generation specialisation | Compute API 鈫?LLK (compile) |
 | Per-core runtime args | Host program (run-time) |
 | Tile-flow synchronisation | Circular buffers + Tensix Sync (run-time) |
 | Cross-tile orchestration | Host program + NoC atomics + host-level semaphores |
@@ -69,11 +68,11 @@ Low-level kernels: per-Tensix sequences of Tensix instructions (`MOP_CFG`, `MOP`
 ## Gaps in current corpus
 
 - TT-MLIR dialect descriptions and lowering pipeline.
-- Where exactly mapping decisions (which op on which Tensix; tile shape; sharding scheme) are made — TT-MLIR vs TT-NN host code vs hand-written.
+- Where exactly mapping decisions (which op on which Tensix; tile shape; sharding scheme) are made 鈥?TT-MLIR vs TT-NN host code vs hand-written.
 - Auto-tuning / cost models, if any.
 - Integration with vLLM and other higher-level runtimes.
 
-Tracked in [[open_questions]].
+Tracked in [[questions/README|Questions]].
 
 ## Related pages
 
@@ -85,3 +84,4 @@ Tracked in [[open_questions]].
 - `raw/2026-05-05__github_readme__tt-metal-readme.md`
 - `raw/2026-05-05__github_readme__tt-isa-documentation-readme.md`
 - `raw/2026-05-05__blog__corsix-tt-wh-part5-t-tiles.md`
+

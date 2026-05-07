@@ -1,5 +1,5 @@
----
-type: concept
+﻿---
+type: mechanism
 status: draft
 created: 2026-05-05
 updated: 2026-05-05
@@ -37,11 +37,11 @@ Instructions other than the above flow through to the backend, **tagged with the
 
 The three Tensix pipes (one per "T" core) feed shared backend units. Without arbitration the Math unit could be told to compute on `SrcA`/`SrcB` that hasn't yet been filled by Unpacker, etc. Tensix Sync lets the LLK code:
 
-- guard handoff of `Dst` / `SrcA` / `SrcB` between Unpack → Math → Pack
+- guard handoff of `Dst` / `SrcA` / `SrcB` between Unpack 鈫?Math 鈫?Pack
 - block until a semaphore meets a condition (e.g. "tile in CB available")
 - block until a hardware resource is free
 
-This is the **internal synchronisation substrate** that [[Circular Buffers]] sit on top of (probably — exact mapping to TT-Metal CB metadata not yet pinned down in `raw/`; tracked in [[open_questions]]).
+This is the **internal synchronisation substrate** that [[Circular Buffers]] sit on top of (probably 鈥?exact mapping to TT-Metal CB metadata not yet pinned down in `raw/`; tracked in [[questions/README|Questions]]).
 
 ## MMIO access from "T" cores
 
@@ -57,3 +57,4 @@ This is the **internal synchronisation substrate** that [[Circular Buffers]] sit
 
 - `raw/2026-05-05__blog__corsix-tt-wh-part5-t-tiles.md`
 - `raw/2026-05-05__github_doc__tt-isa-wormhole-tensix-tile.md`
+
