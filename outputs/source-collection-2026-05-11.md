@@ -1,0 +1,85 @@
+# Weekly Source Collection Report
+
+- Run date: 2026-05-11
+- New raw files: 13
+- Skipped duplicates/old items: 9
+
+## New files
+
+- `raw/2026-05-11__blog__vision-announcements-tenstorrent.md`
+  - Title: Vision (announcements) | Tenstorrent
+  - Source: tenstorrent-newsroom
+  - Published: unknown
+  - URL: https://tenstorrent.com/newsroom/tags/announcements
+- `raw/2026-05-11__blog__vision-machine-learning-tenstorrent.md`
+  - Title: Vision (machine-learning) | Tenstorrent
+  - Source: tenstorrent-newsroom
+  - Published: unknown
+  - URL: https://tenstorrent.com/newsroom/tags/machine-learning
+- `raw/2026-05-11__blog__vision-newsroom-tenstorrent.md`
+  - Title: Vision (newsroom) | Tenstorrent
+  - Source: tenstorrent-newsroom
+  - Published: unknown
+  - URL: https://tenstorrent.com/newsroom/tags/newsroom
+- `raw/2026-05-11__blog__vision-white-paper-tenstorrent.md`
+  - Title: Vision (white-paper) | Tenstorrent
+  - Source: tenstorrent-newsroom
+  - Published: unknown
+  - URL: https://tenstorrent.com/newsroom/tags/white-paper
+- `raw/2026-05-11__blog__vision-software-tenstorrent.md`
+  - Title: Vision (software) | Tenstorrent
+  - Source: tenstorrent-newsroom
+  - Published: unknown
+  - URL: https://tenstorrent.com/newsroom/tags/software
+- `raw/2026-05-11__blog__vision-talk-tenstorrent.md`
+  - Title: Vision (talk) | Tenstorrent
+  - Source: tenstorrent-newsroom
+  - Published: unknown
+  - URL: https://tenstorrent.com/newsroom/tags/talk
+- `raw/2026-05-11__blog__vision-cpu-tenstorrent.md`
+  - Title: Vision (cpu) | Tenstorrent
+  - Source: tenstorrent-newsroom
+  - Published: unknown
+  - URL: https://tenstorrent.com/newsroom/tags/cpu
+- `raw/2026-05-11__blog__vision-podcast-tenstorrent.md`
+  - Title: Vision (podcast) | Tenstorrent
+  - Source: tenstorrent-newsroom
+  - Published: unknown
+  - URL: https://tenstorrent.com/newsroom/tags/podcast
+- `raw/2026-05-11__blog__vision-risc-v-tenstorrent.md`
+  - Title: Vision (risc-v) | Tenstorrent
+  - Source: tenstorrent-newsroom
+  - Published: unknown
+  - URL: https://tenstorrent.com/newsroom/tags/risc-v
+- `raw/2026-05-11__blog__vision-research-tenstorrent.md`
+  - Title: Vision (research) | Tenstorrent
+  - Source: tenstorrent-newsroom
+  - Published: unknown
+  - URL: https://tenstorrent.com/newsroom/tags/research
+- `raw/2026-05-11__blog__which-risc-v-instructions-does-the-et-soc-1-give-us.md`
+  - Title: Which RISC-V instructions does the ET-SoC-1 give us?
+  - Source: corsix-tenstorrent
+  - Published: unknown
+  - URL: https://www.corsix.org/content/et-soc-riscv-instructions
+- `raw/2026-05-11__paper_metadata__stencil-computations-on-tenstorrent-wormhole.md`
+  - Title: Stencil Computations on Tenstorrent Wormhole
+  - Source: arxiv-tenstorrent
+  - Published: 2026-05-08
+  - URL: https://arxiv.org/abs/2605.07599v1
+- `raw/2026-05-11__paper_metadata__assessing-performance-and-porting-strategies-for-gravitational-n-body-simulations-on-the-risc-v-base.md`
+  - Title: Assessing Performance and Porting Strategies for Gravitational $N$-Body Simulations on the RISC-V-Based Tenstorrent Wormhole\textsuperscript{\texttrademark}
+  - Source: arxiv-tenstorrent
+  - Published: 2026-05-04
+  - URL: https://arxiv.org/abs/2605.02744v1
+
+## Skipped
+
+- old item: Numerical Kernels on a Spatial Accelerator: A Study of Tenstorrent Wormhole
+- old item: Rewriting TTS Inference Economics: Lightning V2 on Tenstorrent Achieves 4x Lower Cost Than NVIDIA L40S
+- old item: Accelerating Gravitational $N$-Body Simulations Using the RISC-V-Based Tenstorrent Wormhole
+- old item: HetGPU: The pursuit of making binary compatibility towards GPUs
+- old item: Exploring Fast Fourier Transforms on the Tenstorrent Wormhole
+- old item: Topology-Aware Virtualization over Inter-Core Connected Neural Processing Units
+- old item: Assessing Tenstorrent's RISC-V MatMul Acceleration Capabilities
+- old item: Accelerating stencils on the Tenstorrent Grayskull RISC-V accelerator
+- old item: Attention in SRAM on Tenstorrent Grayskull

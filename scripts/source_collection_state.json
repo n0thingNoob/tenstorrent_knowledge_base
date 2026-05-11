@@ -1,4 +1,76 @@
 {
-  "seen_urls": {},
-  "runs": []
+  "seen_urls": {
+    "https://tenstorrent.com/newsroom/tags/announcements": {
+      "title": "Vision (announcements) | Tenstorrent",
+      "raw_path": "raw/2026-05-11__blog__vision-announcements-tenstorrent.md",
+      "collected": "2026-05-11"
+    },
+    "https://tenstorrent.com/newsroom/tags/machine-learning": {
+      "title": "Vision (machine-learning) | Tenstorrent",
+      "raw_path": "raw/2026-05-11__blog__vision-machine-learning-tenstorrent.md",
+      "collected": "2026-05-11"
+    },
+    "https://tenstorrent.com/newsroom/tags/newsroom": {
+      "title": "Vision (newsroom) | Tenstorrent",
+      "raw_path": "raw/2026-05-11__blog__vision-newsroom-tenstorrent.md",
+      "collected": "2026-05-11"
+    },
+    "https://tenstorrent.com/newsroom/tags/white-paper": {
+      "title": "Vision (white-paper) | Tenstorrent",
+      "raw_path": "raw/2026-05-11__blog__vision-white-paper-tenstorrent.md",
+      "collected": "2026-05-11"
+    },
+    "https://tenstorrent.com/newsroom/tags/software": {
+      "title": "Vision (software) | Tenstorrent",
+      "raw_path": "raw/2026-05-11__blog__vision-software-tenstorrent.md",
+      "collected": "2026-05-11"
+    },
+    "https://tenstorrent.com/newsroom/tags/talk": {
+      "title": "Vision (talk) | Tenstorrent",
+      "raw_path": "raw/2026-05-11__blog__vision-talk-tenstorrent.md",
+      "collected": "2026-05-11"
+    },
+    "https://tenstorrent.com/newsroom/tags/cpu": {
+      "title": "Vision (cpu) | Tenstorrent",
+      "raw_path": "raw/2026-05-11__blog__vision-cpu-tenstorrent.md",
+      "collected": "2026-05-11"
+    },
+    "https://tenstorrent.com/newsroom/tags/podcast": {
+      "title": "Vision (podcast) | Tenstorrent",
+      "raw_path": "raw/2026-05-11__blog__vision-podcast-tenstorrent.md",
+      "collected": "2026-05-11"
+    },
+    "https://tenstorrent.com/newsroom/tags/risc-v": {
+      "title": "Vision (risc-v) | Tenstorrent",
+      "raw_path": "raw/2026-05-11__blog__vision-risc-v-tenstorrent.md",
+      "collected": "2026-05-11"
+    },
+    "https://tenstorrent.com/newsroom/tags/research": {
+      "title": "Vision (research) | Tenstorrent",
+      "raw_path": "raw/2026-05-11__blog__vision-research-tenstorrent.md",
+      "collected": "2026-05-11"
+    },
+    "https://www.corsix.org/content/et-soc-riscv-instructions": {
+      "title": "Which RISC-V instructions does the ET-SoC-1 give us?",
+      "raw_path": "raw/2026-05-11__blog__which-risc-v-instructions-does-the-et-soc-1-give-us.md",
+      "collected": "2026-05-11"
+    },
+    "https://arxiv.org/abs/2605.07599v1": {
+      "title": "Stencil Computations on Tenstorrent Wormhole",
+      "raw_path": "raw/2026-05-11__paper_metadata__stencil-computations-on-tenstorrent-wormhole.md",
+      "collected": "2026-05-11"
+    },
+    "https://arxiv.org/abs/2605.02744v1": {
+      "title": "Assessing Performance and Porting Strategies for Gravitational $N$-Body Simulations on the RISC-V-Based Tenstorrent Wormhole\\textsuperscript{\\texttrademark}",
+      "raw_path": "raw/2026-05-11__paper_metadata__assessing-performance-and-porting-strategies-for-gravitational-n-body-simulations-on-the-risc-v-base.md",
+      "collected": "2026-05-11"
+    }
+  },
+  "runs": [
+    {
+      "date": "2026-05-11",
+      "new_files": 13,
+      "report": "outputs/source-collection-2026-05-11.md"
+    }
+  ]
 }
