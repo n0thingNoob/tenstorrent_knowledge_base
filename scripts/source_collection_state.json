@@ -64,6 +64,11 @@
       "title": "Assessing Performance and Porting Strategies for Gravitational $N$-Body Simulations on the RISC-V-Based Tenstorrent Wormhole\\textsuperscript{\\texttrademark}",
       "raw_path": "raw/2026-05-11__paper_metadata__assessing-performance-and-porting-strategies-for-gravitational-n-body-simulations-on-the-risc-v-base.md",
       "collected": "2026-05-11"
+    },
+    "https://arxiv.org/abs/2606.09879v1": {
+      "title": "Operator Fusion for LLM Inference on the Tensix Architecture",
+      "raw_path": "raw/2026-06-15__paper_metadata__operator-fusion-for-llm-inference-on-the-tensix-architecture.md",
+      "collected": "2026-06-15"
     }
   },
   "runs": [
@@ -91,6 +96,11 @@
       "date": "2026-06-08",
       "new_files": 0,
       "report": "outputs/source-collection-2026-06-08.md"
+    },
+    {
+      "date": "2026-06-15",
+      "new_files": 1,
+      "report": "outputs/source-collection-2026-06-15.md"
     }
   ]
 }
