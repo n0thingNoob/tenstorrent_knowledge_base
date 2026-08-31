@@ -69,6 +69,16 @@
       "title": "Operator Fusion for LLM Inference on the Tensix Architecture",
       "raw_path": "raw/2026-06-15__paper_metadata__operator-fusion-for-llm-inference-on-the-tensix-architecture.md",
       "collected": "2026-06-15"
+    },
+    "https://arxiv.org/abs/2608.28097v1": {
+      "title": "Great Expectations: Benchmarking the Real-World Performance of RVV 1.0 in HPC",
+      "raw_path": "raw/2026-08-31__paper_metadata__great-expectations-benchmarking-the-real-world-performance-of-rvv-1-0-in-hpc.md",
+      "collected": "2026-08-31"
+    },
+    "https://arxiv.org/abs/2608.22964v1": {
+      "title": "Exploring spectral element methods on the Tenstorrent RISC-V accelerator",
+      "raw_path": "raw/2026-08-31__paper_metadata__exploring-spectral-element-methods-on-the-tenstorrent-risc-v-accelerator.md",
+      "collected": "2026-08-31"
     }
   },
   "runs": [
@@ -151,6 +161,11 @@
       "date": "2026-08-24",
       "new_files": 0,
       "report": "outputs/source-collection-2026-08-24.md"
+    },
+    {
+      "date": "2026-08-31",
+      "new_files": 2,
+      "report": "outputs/source-collection-2026-08-31.md"
     }
   ]
 }
