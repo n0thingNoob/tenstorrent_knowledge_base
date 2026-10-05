@@ -79,6 +79,16 @@
       "title": "Exploring spectral element methods on the Tenstorrent RISC-V accelerator",
       "raw_path": "raw/2026-08-31__paper_metadata__exploring-spectral-element-methods-on-the-tenstorrent-risc-v-accelerator.md",
       "collected": "2026-08-31"
+    },
+    "https://arxiv.org/abs/2610.02658v1": {
+      "title": "Annotation-Driven Migration of CUDA Programs to Tenstorrent Blackhole",
+      "raw_path": "raw/2026-10-05__paper_metadata__annotation-driven-migration-of-cuda-programs-to-tenstorrent-blackhole.md",
+      "collected": "2026-10-05"
+    },
+    "https://arxiv.org/abs/2609.29219v1": {
+      "title": "Schedules Are Solvable Symbols: Tuning-Free Compilation of Tile Programs on Dataflow Architectures",
+      "raw_path": "raw/2026-10-05__paper_metadata__schedules-are-solvable-symbols-tuning-free-compilation-of-tile-programs-on-dataflow-architectures.md",
+      "collected": "2026-10-05"
     }
   },
   "runs": [
@@ -186,6 +196,11 @@
       "date": "2026-09-28",
       "new_files": 0,
       "report": "outputs/source-collection-2026-09-28.md"
+    },
+    {
+      "date": "2026-10-05",
+      "new_files": 2,
+      "report": "outputs/source-collection-2026-10-05.md"
     }
   ]
 }
