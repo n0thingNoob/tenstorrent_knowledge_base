@@ -89,6 +89,11 @@
       "title": "Schedules Are Solvable Symbols: Tuning-Free Compilation of Tile Programs on Dataflow Architectures",
       "raw_path": "raw/2026-10-05__paper_metadata__schedules-are-solvable-symbols-tuning-free-compilation-of-tile-programs-on-dataflow-architectures.md",
       "collected": "2026-10-05"
+    },
+    "https://arxiv.org/abs/2610.37466v1": {
+      "title": "Kernel Performance Engineering under Physical Non-Idealities",
+      "raw_path": "raw/2026-11-02__paper_metadata__kernel-performance-engineering-under-physical-non-idealities.md",
+      "collected": "2026-11-02"
     }
   },
   "runs": [
@@ -216,6 +221,11 @@
       "date": "2026-10-26",
       "new_files": 0,
       "report": "outputs/source-collection-2026-10-26.md"
+    },
+    {
+      "date": "2026-11-02",
+      "new_files": 1,
+      "report": "outputs/source-collection-2026-11-02.md"
     }
   ]
 }
