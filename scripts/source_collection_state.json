@@ -94,6 +94,21 @@
       "title": "Kernel Performance Engineering under Physical Non-Idealities",
       "raw_path": "raw/2026-11-02__paper_metadata__kernel-performance-engineering-under-physical-non-idealities.md",
       "collected": "2026-11-02"
+    },
+    "https://arxiv.org/abs/2611.04740v1": {
+      "title": "A RISC-V Simulator for the Tenstorrent Tensix Architecture",
+      "raw_path": "raw/2026-11-09__paper_metadata__a-risc-v-simulator-for-the-tenstorrent-tensix-architecture.md",
+      "collected": "2026-11-09"
+    },
+    "https://arxiv.org/abs/2611.02975v2": {
+      "title": "Introducing Cluster Efficiency to LLM Serving: Pooling Economical Accelerators over Fast Interconnects",
+      "raw_path": "raw/2026-11-09__paper_metadata__introducing-cluster-efficiency-to-llm-serving-pooling-economical-accelerators-over-fast-interconnect.md",
+      "collected": "2026-11-09"
+    },
+    "https://arxiv.org/abs/2610.37466v2": {
+      "title": "Demystifying the Impact of Physical Non-Idealities on Kernel Performance",
+      "raw_path": "raw/2026-11-09__paper_metadata__demystifying-the-impact-of-physical-non-idealities-on-kernel-performance.md",
+      "collected": "2026-11-09"
     }
   },
   "runs": [
@@ -226,6 +241,11 @@
       "date": "2026-11-02",
       "new_files": 1,
       "report": "outputs/source-collection-2026-11-02.md"
+    },
+    {
+      "date": "2026-11-09",
+      "new_files": 3,
+      "report": "outputs/source-collection-2026-11-09.md"
     }
   ]
 }
